@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Samuel Veliz | Ingeniero de Sistemas & Full Stack Developer</title>
+
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description"
+    content="Portafolio profesional de Samuel Antonio Veliz Benavides. Ingeniero de sistemas, desarrollador Full Stack (React, FastAPI), Mobile (Flutter) y especialista en Agentes de IA.">
+  <meta name="keywords"
+    content="Samuel Veliz, Ingeniero de Sistemas, Portafolio, React, FastAPI, Flutter, Python, TypeScript, IA, Multiagentes, Power BI, Bolivia">
+  <meta name="author" content="Samuel Antonio Veliz Benavides">
+  <meta property="og:title" content="Samuel Veliz | Portafolio Profesional">
+  <meta property="og:description"
+    content="Ingeniero de Sistemas especializado en React, FastAPI, Flutter y Agentes de IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons via Lucide Icons (CDN) & Boxicons / SVG -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ir al inicio">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">SamuelVeliz</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#educacion" class="nav-link">Educación</a></li>
+          <li><a href="CV_Samuel_Veliz.docx.pdf" download="CV_Samuel_Veliz.docx.pdf" class="nav-link nav-link--download" title="Descargar Currículum Vitae en PDF">CV 📄</a></li>
+          <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action buttons: Theme toggle & Mobile burger -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <div class="mobile-nav-brand">
+            <span class="brand-bracket">&lt;</span>SV<span class="brand-bracket">/&gt;</span>
+          </div>
+          <button id="mobile-close-btn" class="mobile-close-btn" aria-label="Cerrar menú">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">01.</span> Inicio</span><span class="mobile-link-arrow">→</span></a></li>
+          <li><a href="#sobre-mi" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">02.</span> Sobre Mí</span><span class="mobile-link-arrow">→</span></a></li>
+          <li><a href="#experiencia" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">03.</span> Experiencia</span><span class="mobile-link-arrow">→</span></a></li>
+          <li><a href="#proyectos" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">04.</span> Proyectos</span><span class="mobile-link-arrow">→</span></a></li>
+          <li><a href="#habilidades" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">05.</span> Habilidades</span><span class="mobile-link-arrow">→</span></a></li>
+          <li><a href="#educacion" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">06.</span> Educación</span><span class="mobile-link-arrow">→</span></a></li>
+          <li><a href="CV_Samuel_Veliz.docx.pdf" download="CV_Samuel_Veliz.docx.pdf" class="mobile-link"><span class="mobile-link-text"><span class="mobile-link-num">07.</span> Descargar CV (PDF)</span><span class="mobile-link-arrow">📥</span></a></li>
+          <li><a href="#contacto" class="mobile-link mobile-link--highlight"><span>Hablemos / Contactar</span><span class="mobile-link-arrow">→</span></a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <div class="mobile-socials">
+            <a href="https://github.com/savelizbdev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+            <a href="http://www.linkedin.com/in/samuel-veliz" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/59171832939?text=Hola%20Samuel,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte"
+              target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12.031 0C5.397 0 .012 5.385.012 12.019c0 2.115.551 4.18 1.597 5.992L.071 24l6.155-1.614c1.745.952 3.712 1.455 5.805 1.455 6.633 0 12.018-5.385 12.018-12.022C24.049 5.385 18.664 0 12.031 0zm0 21.99c-1.854 0-3.669-.499-5.251-1.442l-.377-.224-3.9 1.022 1.042-3.803-.245-.391a9.92 9.92 0 0 1-1.524-5.133c0-5.503 4.478-9.98 9.985-9.98 5.507 0 9.985 4.477 9.985 9.98 0 5.504-4.478 9.981-9.985 9.981zm5.474-7.487c-.3-.15-1.774-.875-2.05-.975-.275-.1-.476-.15-.676.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.489-.893-.796-1.496-1.78-1.671-2.08-.175-.3-.019-.462.131-.611.136-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525s-.676-1.63-.926-2.23c-.244-.585-.492-.506-.676-.515l-.576-.01c-.2 0-.525.075-.8.375s-1.05 1.025-1.05 2.5 1.075 2.898 1.225 3.098c.15.2 2.116 3.23 5.124 4.53.716.31 1.275.495 1.71.634.719.229 1.373.197 1.89.12.578-.086 1.774-.726 2.025-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z" />
+              </svg>
+            </a>
+          </div>
+          <span class="mobile-nav-caption">La Paz, Bolivia 🇧🇴</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-blob hero-glow-blob--1" aria-hidden="true"></div>
+      <div class="hero-glow-blob hero-glow-blob--2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Profile Avatar with badge -->
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-image-container">
+            <img src="images/profile.webp" alt="Foto de perfil de Samuel Antonio Veliz Benavides" class="hero-avatar"
+              width="180" height="180" loading="eager">
+          </div>
+          <div class="status-pill" title="Abierto a oportunidades laborales">
+            <span class="status-dot"></span>
+            <span class="status-text">Disponible para proyectos</span>
+          </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <span class="hero-greeting">¡Hola! Soy</span>
+          <h1 class="hero-title">
+            <span class="name-gradient">Samuel Veliz</span>
+          </h1>
+          <p class="hero-headline">
+            Ingeniero de Sistemas <span class="headline-separator">•</span> Full Stack & Mobile Developer
+          </p>
+          <p class="hero-description">
+            Especializado en crear plataformas de alto impacto con <strong>React</strong>, <strong>FastAPI</strong> y
+            <strong>Flutter</strong>. Apasionado por la integración de <strong>Agentes de IA</strong>, arquitecturas
+            escalables y soluciones orientadas a datos con <strong>Power BI</strong>.
+          </p>
+
+          <!-- Badges / Core Stack Tags -->
+          <div class="hero-tags">
+            <span class="tag-pill"><i class="tag-icon">⚡</i> React + TypeScript</span>
+            <span class="tag-pill"><i class="tag-icon">🚀</i> FastAPI (Python)</span>
+            <span class="tag-pill"><i class="tag-icon">📱</i> Flutter Mobile</span>
+            <span class="tag-pill"><i class="tag-icon">🤖</i> AI Agents (Google ADK)</span>
+            <span class="tag-pill"><i class="tag-icon">📊</i> Power BI & SQL</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">
+              <span>Explorar Proyectos</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="CV_Samuel_Veliz.docx.pdf" download="CV_Samuel_Veliz.docx.pdf" class="btn btn-download" title="Descargar Currículum Vitae en PDF">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Descargar CV</span>
+            </a>
+            <a href="https://wa.me/59171832939?text=Hola%20Samuel,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12.031 0C5.397 0 .012 5.385.012 12.019c0 2.115.551 4.18 1.597 5.992L.071 24l6.155-1.614c1.745.952 3.712 1.455 5.805 1.455 6.633 0 12.018-5.385 12.018-12.022C24.049 5.385 18.664 0 12.031 0zm0 21.99c-1.854 0-3.669-.499-5.251-1.442l-.377-.224-3.9 1.022 1.042-3.803-.245-.391a9.92 9.92 0 0 1-1.524-5.133c0-5.503 4.478-9.98 9.985-9.98 5.507 0 9.985 4.477 9.985 9.98 0 5.504-4.478 9.981-9.985 9.981zm5.474-7.487c-.3-.15-1.774-.875-2.05-.975-.275-.1-.476-.15-.676.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.489-.893-.796-1.496-1.78-1.671-2.08-.175-.3-.019-.462.131-.611.136-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525s-.676-1.63-.926-2.23c-.244-.585-.492-.506-.676-.515l-.576-.01c-.2 0-.525.075-.8.375s-1.05 1.025-1.05 2.5 1.075 2.898 1.225 3.098c.15.2 2.116 3.23 5.124 4.53.716.31 1.275.495 1.71.634.719.229 1.373.197 1.89.12.578-.086 1.774-.726 2.025-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z" />
+              </svg>
+              <span>Hablemos por WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="metric-number">+4</span>
+              <span class="metric-label">Experiencias Laborales</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">2 🏆</span>
+              <span class="metric-label">Premios en Hackathons</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Enfoque en Soluciones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ / ABOUT -->
+    <section class="section about-section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Conóceme</span>
+          <h2 class="section-title">Sobre Mí</h2>
+          <p class="section-subtitle">Combinando ingeniería de software, inteligencia artificial y analítica de datos.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <span class="about-emoji">💡</span>
+              <h3>Perfil Profesional</h3>
+            </div>
+            <p>
+              Soy <strong>Ingeniero de Sistemas</strong> graduado de la <em>Escuela Militar de Ingeniería (EMI)</em> en
+              La Paz, Bolivia. Mi trayectoria combina el desarrollo Full Stack moderno (React, FastAPI, PostgreSQL),
+              aplicaciones móviles multiplataforma de alto rendimiento con Flutter y el despliegue en EC2 de AWS.
+            </p>
+            <p>
+              Me apasiona integrar <strong>agentes inteligentes (Multi-Agent Systems)</strong> con frameworks como
+              Google ADK y modelos de lenguaje para automatizar diagnósticos, procesar datos no estructurados y
+              construir plataformas que resuelvan problemas reales de negocios y organizaciones.
+            </p>
+            <div class="about-location-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>La Paz, Bolivia • Disponible para trabajo remoto e híbrido</span>
+            </div>
+            <div class="about-actions">
+              <a href="CV_Samuel_Veliz.docx.pdf" download="CV_Samuel_Veliz.docx.pdf" class="btn btn-download btn-sm" title="Descargar Currículum Vitae en PDF">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Descargar CV Completo (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">💻</div>
+              <h4>Desarrollo Full Stack</h4>
+              <p>Frontend dinámico con React & TypeScript; APIs robustas y ultrarrápidas con FastAPI & Python.</p>
+            </div>
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">📱</div>
+              <h4>Mobile con Flutter</h4>
+              <p>Apps nativas fluidas para iOS y Android, gestión de estado con Bloc/Cubit y consumo de APIs REST.</p>
+            </div>
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">🤖</div>
+              <h4>Multiagentes & IA</h4>
+              <p>Sistemas autónomos de toma de decisiones, scraping inteligente y prompts optimizados con Google ADK.
+              </p>
+            </div>
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">📈</div>
+              <h4>Datos & BI</h4>
+              <p>Modelado de datos en PostgreSQL, pipelines ETL y tableros estratégicos de decisión en Power BI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL -->
+    <section class="section experience-section" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Trayectoria</span>
+          <h2 class="section-title">Experiencia Profesional</h2>
+          <p class="section-subtitle">Proyectos institucionales, iniciativas empresariales y desarrollo bajo demanda.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Solidar Suisse -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="company-brand">
+                  <div class="company-logo-wrapper">
+                    <img src="images/solidar-suisse.webp" alt="Solidar Suisse logo" class="company-logo" loading="lazy">
+                  </div>
+                  <div>
+                    <h3 class="role-title">Servicio Profesional Independiente</h3>
+                    <h4 class="company-name">Solidar Suisse — Proyecto Fuerza Joven</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">Sep 2026 – Nov 2026</span>
+                  <span class="timeline-location">La Paz, Bolivia</span>
+                </div>
+              </div>
+              <ul class="timeline-tasks">
+                <li>Mantenimiento y asistencia técnica integral de la plataforma digital <strong>Luci IA</strong> para
+                  el proyecto Fuerza Joven.</li>
+                <li>Actualización del sistema, monitoreo y consultas avanzadas a base de datos para verificación de
+                  información y soporte continuo.</li>
+                <li>Atención ágil de incidencias y resolución de errores críticos para garantizar la estabilidad de la
+                  plataforma en producción.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: ECONOTEC SRL -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="company-brand">
+                  <div class="company-logo-wrapper">
+                    <img src="images/econotec-srl.webp" alt="Econotec SRL logo" class="company-logo" loading="lazy">
+                  </div>
+                  <div>
+                    <h3 class="role-title">Desarrollador Full Stack Freelance</h3>
+                    <h4 class="company-name">ECONOTEC SRL</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">May 2026 – Jun 2026</span>
+                  <span class="timeline-location">La Paz, Bolivia</span>
+                </div>
+              </div>
+              <ul class="timeline-tasks">
+                <li>Levantamiento y validación de requerimientos, desarrollo de módulos a medida, control de versiones y
+                  pruebas de calidad (QA).</li>
+                <li>Implementación de nuevos módulos al sistema <strong>ECOGAN</strong> y base de datos relacional
+                  PostgreSQL para la clínica veterinaria <em>ANIMALL</em>: registro de pacientes, sala de espera,
+                  asignación de veterinarios, ficha clínica, agendamiento de citas, historial clínico y ficha de
+                  cirugías.</li>
+                <li>Capacitación personalizada al personal administrativo, recepción y cuerpo veterinario para el
+                  correcto uso y adopción del sistema.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span class="tech-tag">CodeIgniter (PHP)</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Full Stack</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: JCI Activa Mujer -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="company-brand">
+                  <div class="company-logo-wrapper logo-group">
+                    <img src="images/logo-activa-mujer.webp" alt="Activa Mujer logo" class="company-logo"
+                      loading="lazy">
+                    <img src="images/logo-jci.webp" alt="JCI logo" class="company-logo" loading="lazy">
+                  </div>
+                  <div>
+                    <h3 class="role-title">Miembro Individual & Líder Técnico</h3>
+                    <h4 class="company-name">JCI Empresarios La Paz — Programa Activa Mujer</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge timeline-badge--current">Mar 2026 – Presente</span>
+                  <span class="timeline-location">La Paz, Bolivia</span>
+                </div>
+              </div>
+              <ul class="timeline-tasks">
+                <li>Despliegue exitoso a producción en una instancia <strong>EC2 de AWS</strong>, gestión de seguridad
+                  en puertos, dominios y configuración de certificados SSL.</li>
+                <li>Capacitación en talleres del programa Activa Mujer sobre el uso de la plataforma <strong>Luci
+                    IA</strong> para emprendedoras, mentores y administradores.</li>
+                <li>Mejora continua, recolección de feedback de usuarios reales y mantenimiento evolutivo del sistema.
+                </li>
+              </ul>
+              <div class="timeline-cta">
+                <a href="https://luci.enkaigroup.com/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <span>Ver plataforma Luci IA en vivo</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+              <div class="timeline-stack">
+                <span class="tech-tag">AWS EC2</span>
+                <span class="tech-tag">SSL / Nginx</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Producción</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: JCI Empresarios La Paz (Tesista) -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="company-brand">
+                  <div class="company-logo-wrapper">
+                    <img src="images/logo-jci-light.webp" alt="JCI logo" class="company-logo" loading="lazy">
+                  </div>
+                  <div>
+                    <h3 class="role-title">Tesista — Arquitecto e Implementador de IA</h3>
+                    <h4 class="company-name">JCI Empresarios La Paz</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">Ago 2025 – Jul 2026</span>
+                  <span class="timeline-location">La Paz, Bolivia</span>
+                </div>
+              </div>
+              <ul class="timeline-tasks">
+                <li>Desarrollo integral de la plataforma digital asistida por <strong>multiagentes</strong> para
+                  optimizar procesos críticos en incubadoras de emprendimientos: <strong>Luci IA</strong>.</li>
+                <li>Implementación con React (TypeScript), Supabase, FastAPI y <strong>Google ADK (Python)</strong>.
+                </li>
+                <li>Diagnóstico automatizado con IA para identificar el estado de madurez, fortalezas, debilidades y
+                  generación de planes de acción personalizados.</li>
+                <li>Sistema automatizado de recordatorios inteligentes con generación dinámica de mensajes
+                  personalizados por IA.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span class="tech-tag">Google ADK</span>
+                <span class="tech-tag">Multiagentes</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">React (TS)</span>
+                <span class="tech-tag">Supabase</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Ministerio de Defensa -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="company-brand">
+                  <div class="company-logo-placeholder">
+                    <span>MD</span>
+                  </div>
+                  <div>
+                    <h3 class="role-title">Pasante de Desarrollo de Software</h3>
+                    <h4 class="company-name">Ministerio de Defensa de Bolivia</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">Abr 2024 – Oct 2024</span>
+                  <span class="timeline-location">La Paz, Bolivia</span>
+                </div>
+              </div>
+              <ul class="timeline-tasks">
+                <li>Desarrollo del <strong>Sistema de Control de Dotaciones Alimenticias</strong> para unidades
+                  militares de las Fuerzas Armadas.</li>
+                <li>Migración integral de registros dispersos en hojas de Excel compartidas hacia una base de datos
+                  centralizada en <strong>Firebase</strong>.</li>
+                <li>Implementación de plataforma web interactiva utilizando <strong>Flutter Web</strong>, mejorando la
+                  trazabilidad, auditoría y control logístico en tiempo real.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span class="tech-tag">Flutter Web</span>
+                <span class="tech-tag">Firebase Firestore</span>
+                <span class="tech-tag">Logística</span>
+                <span class="tech-tag">Migración de Datos</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="section projects-section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portafolio</span>
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <p class="section-subtitle">Soluciones de software, hackathons premiados, visión por computadora y analítica
+            de datos.</p>
+        </div>
+
+        <!-- Filter tabs for mobile and desktop -->
+        <div class="filter-tabs" role="tablist" aria-label="Filtrar proyectos">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="ai-web" role="tab" aria-selected="false">IA & Web</button>
+          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+          <button class="filter-btn" data-filter="bi" role="tab" aria-selected="false">BI & Datos</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Proyecto 1: DestinIA (Award Winner) -->
+          <article class="project-card glass-panel" data-category="ai-web">
+            <div class="project-card-top">
+              <div class="project-badge project-badge--award">
+                <span>🏆 Mención Especial a Mejor Presentación</span>
+              </div>
+              <span class="project-date">Jun 2026</span>
+            </div>
+            <h3 class="project-title">DestinIA — Build with AI</h3>
+            <p class="project-desc">
+              Generador automatizado de landing pages informativas con IA. Procesa documentos (PDFs e infografías)
+              mediante técnicas de scraping para extraer datos clave y alimentar un LLM, produciendo código HTML, CSS y
+              JS optimizado con hasta un <strong>80% de ahorro de tokens</strong>. Despliegue automático vía GitHub
+              Actions.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">IA Generativa</span>
+              <span class="tech-tag">Python Scraping</span>
+              <span class="tech-tag">HTML / CSS / JS</span>
+              <span class="tech-tag">GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/dilanCimarChn/build-with-AI-26.git" target="_blank" rel="noopener noreferrer"
+                class="btn-project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>Repositorio GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: NASA Space Apps (5to Lugar) -->
+          <article class="project-card glass-panel" data-category="ai-web">
+            <div class="project-card-top">
+              <div class="project-badge project-badge--nasa">
+                <span>🚀 NASA Space Apps • 5° Lugar</span>
+              </div>
+              <span class="project-date">Oct 2025</span>
+            </div>
+            <h3 class="project-title">Plataforma Ambiental NASA Space Apps</h3>
+            <p class="project-desc">
+              Plataforma web de simulación y concientización sobre la pérdida progresiva de áreas verdes. Cuenta con
+              modelos de proyección interactivos, integración de feed informativo con noticias de fuentes oficiales y
+              módulo de recomendaciones de mitigación ambiental.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">Simulación Web</span>
+              <span class="tech-tag">NASA Datasets</span>
+              <span class="tech-tag">Visualización</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Dante1128/Hackaton-NASA2025.git" target="_blank" rel="noopener noreferrer"
+                class="btn-project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>Repositorio GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Luci IA en Producción -->
+          <article class="project-card glass-panel" data-category="ai-web">
+            <div class="project-card-top">
+              <div class="project-badge project-badge--live">
+                <span>🟢 En Producción</span>
+              </div>
+              <span class="project-date">2025 – 2026</span>
+            </div>
+            <h3 class="project-title">Luci IA — Incubadora con Multiagentes</h3>
+            <p class="project-desc">
+              Plataforma digital para la aceleración e incubación de emprendimientos. Emplea agentes autónomos creados
+              con Google ADK para realizar diagnósticos estratégicos automáticos, identificar cuellos de botella y
+              coordinar planes de trabajo con alertas contextuales.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">React TypeScript</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Google ADK</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">AWS EC2</span>
+            </div>
+            <div class="project-links">
+              <a href="https://luci.enkaigroup.com/" target="_blank" rel="noopener noreferrer"
+                class="btn-project-link btn-project-link--primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Visitar luci.enkaigroup.com</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Contador PushUps & Squats (Flutter + ML Kit) -->
+          <article class="project-card glass-panel" data-category="mobile">
+            <div class="project-card-top">
+              <div class="project-badge project-badge--mobile">
+                <span>📱 Computer Vision Mobile</span>
+              </div>
+              <span class="project-date">Dic 2023</span>
+            </div>
+            <h3 class="project-title">Reconocimiento de Ejercicios Físicos</h3>
+            <p class="project-desc">
+              Aplicación móvil desarrollada en Flutter con visión por computadora en el dispositivo. Integra
+              <strong>Google ML Kit</strong> para detectar keypoints corporales mediante la cámara, validar la técnica y
+              postura, y contar automáticamente repeticiones de flexiones y sentadillas con rutinas personalizadas.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Google ML Kit</span>
+              <span class="tech-tag">Pose Detection</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/savelizbdev/contador-de-pushUps-y-Squats.git" target="_blank"
+                rel="noopener noreferrer" class="btn-project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>Repositorio GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 5: Combate Espacial Mobile -->
+          <article class="project-card glass-panel" data-category="mobile">
+            <div class="project-card-top">
+              <div class="project-badge project-badge--mobile">
+                <span>👾 Game Dev Mobile</span>
+              </div>
+              <span class="project-date">Nov 2023</span>
+            </div>
+            <h3 class="project-title">Juego Móvil de Combate Espacial</h3>
+            <p class="project-desc">
+              Juego arcade para dispositivos móviles con modos PvP (jugador contra jugador) y PvE (jugador contra
+              computadora). Implementación de algoritmos heurísticos para el comportamiento inteligente y evasivo de la
+              nave rival, sistema de colisiones y efectos visuales fluidos.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">Flutter / Dart</span>
+              <span class="tech-tag">Game Logic</span>
+              <span class="tech-tag">IA de Oponente</span>
+              <span class="tech-tag">Mobile UI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/savelizbdev/fast-juego.git" target="_blank" rel="noopener noreferrer"
+                class="btn-project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>Repositorio GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 6: Dashboards en Power BI -->
+          <article class="project-card glass-panel" data-category="bi">
+            <div class="project-card-top">
+              <div class="project-badge project-badge--bi">
+                <span>📊 Business Intelligence</span>
+              </div>
+              <span class="project-date">Oct 2025</span>
+            </div>
+            <h3 class="project-title">Dashboards Analíticos en Power BI</h3>
+            <p class="project-desc">
+              Diseño integral de modelos dimensionales y tableros interactivos para toma de decisiones ejecutivas:
+              análisis multidimensional de ventas, hábitos de compra por cliente y cálculo dinámico de comisiones por
+              vendedor utilizando fórmulas DAX optimizadas.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">DAX Avanzado</span>
+              <span class="tech-tag">ETL & Modelado</span>
+              <span class="tech-tag">KPIs de Negocio</span>
+            </div>
+            <div class="project-links">
+              <span class="badge-internal">Solución Empresarial & Modelado DAX</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES TÉCNICAS -->
+    <section class="section skills-section" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Stack Técnico</span>
+          <h2 class="section-title">Habilidades & Tecnologías</h2>
+          <p class="section-subtitle">Herramientas y lenguajes que utilizo para construir soluciones confiables de
+            extremo a extremo.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Col 1: Lenguajes -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon">⌨️</div>
+              <h3>Lenguajes</h3>
+            </div>
+            <div class="chips-container">
+              <div class="skill-chip"><span class="chip-dot"></span>TypeScript</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Python</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Dart</div>
+              <div class="skill-chip"><span class="chip-dot"></span>SQL (PostgreSQL)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>PHP</div>
+              <div class="skill-chip"><span class="chip-dot"></span>JavaScript (ES6+)</div>
+            </div>
+          </div>
+
+          <!-- Col 2: Web & Backend -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon">🌐</div>
+              <h3>Web & Backend</h3>
+            </div>
+            <div class="chips-container">
+              <div class="skill-chip"><span class="chip-dot"></span>React (TypeScript)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>FastAPI (Python)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>CodeIgniter (PHP)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>RESTful APIs</div>
+              <div class="skill-chip"><span class="chip-dot"></span>HTML5 & CSS3 Moderno</div>
+            </div>
+          </div>
+
+          <!-- Col 3: Mobile -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon">📲</div>
+              <h3>Desarrollo Mobile</h3>
+            </div>
+            <div class="chips-container">
+              <div class="skill-chip"><span class="chip-dot"></span>Flutter Multiplataforma</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Flutter Web</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Gestión de Estado (Bloc/Cubit)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Consumo de APIs (Dio)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Google ML Kit</div>
+            </div>
+          </div>
+
+          <!-- Col 4: IA, Cloud & Datos -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon">🧠</div>
+              <h3>IA, Cloud & Datos</h3>
+            </div>
+            <div class="chips-container">
+              <div class="skill-chip"><span class="chip-dot"></span>Google ADK (Multiagentes)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Power BI (DAX & ETL)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Supabase & PostgreSQL</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Firebase (Auth & Firestore)</div>
+              <div class="skill-chip"><span class="chip-dot"></span>AWS EC2 & SSL Setup</div>
+              <div class="skill-chip"><span class="chip-dot"></span>Git & GitHub Actions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN Y CERTIFICACIONES -->
+    <section class="section education-section" id="educacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Formación</span>
+          <h2 class="section-title">Educación & Certificaciones</h2>
+          <p class="section-subtitle">Bases universitarias sólidas y aprendizaje continuo constante.</p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Grado Universitario -->
+          <div class="edu-primary-card glass-panel">
+            <div class="edu-logo-box">
+              <img src="images/emi-ualp.webp" alt="Escuela Militar de Ingeniería logo" class="edu-logo" loading="lazy">
+            </div>
+            <div class="edu-details">
+              <span class="edu-tag">Título de Grado</span>
+              <h3 class="edu-degree">Licenciatura en Ingeniería de Sistemas</h3>
+              <h4 class="edu-institution">Escuela Militar de Ingeniería (EMI)</h4>
+              <p class="edu-period">Feb 2021 – Jun 2026 • La Paz, Bolivia</p>
+              <p class="edu-desc">
+                Formación integral en ciencias de la computación, arquitectura de software, bases de datos relacionales
+                y no relacionales, redes y sistemas inteligentes. Tesis orientada a la creación de plataformas con
+                sistemas multiagentes de IA.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formación Complementaria -->
+          <div class="certifications-card glass-panel">
+            <h3 class="certs-title">
+              <span>📜</span> Cursos & Especializaciones Destacadas
+            </h3>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-top">
+                  <span class="cert-name">Aprende SQL (Consultas avanzadas & Transacciones)</span>
+                  <span class="cert-meta">Sep 2026</span>
+                </div>
+                <div class="cert-provider">midudev • 10 horas</div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-top">
+                  <span class="cert-name">Building AI Agents with Google ADK</span>
+                  <span class="cert-meta">Nov 2025</span>
+                </div>
+                <div class="cert-provider">DataCamp • Agentes inteligentes y LLMs</div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-top">
+                  <span class="cert-name">Experto en Inteligencia de Negocios con Power BI</span>
+                  <span class="cert-meta">Sep – Nov 2025</span>
+                </div>
+                <div class="cert-provider">ePC — Universidad Católica Boliviana (UCB) • 40 horas</div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-top">
+                  <span class="cert-name">Legacy-Flutter: Guía completa para iOS y Android</span>
+                  <span class="cert-meta">Abr 2024</span>
+                </div>
+                <div class="cert-provider">Udemy • 37.5 horas</div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-top">
+                  <span class="cert-name">Ultimate Python: De cero a programador experto</span>
+                  <span class="cert-meta">Nov 2023</span>
+                </div>
+                <div class="cert-provider">Udemy • 18 horas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-card glass-panel">
+          <div class="contact-header">
+            <span class="section-badge">Hablemos</span>
+            <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
+            <p class="section-subtitle">
+              Estoy disponible para proyectos freelance, roles a tiempo completo o colaboraciones de desarrollo web,
+              mobile e inteligencia artificial.
+            </p>
+          </div>
+
+          <div class="contact-methods-grid">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/59171832939?text=Hola%20Samuel,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20contigo"
+              target="_blank" rel="noopener noreferrer" class="contact-card-item">
+              <div class="contact-icon contact-icon--wa">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                  <path
+                    d="M12.031 0C5.397 0 .012 5.385.012 12.019c0 2.115.551 4.18 1.597 5.992L.071 24l6.155-1.614c1.745.952 3.712 1.455 5.805 1.455 6.633 0 12.018-5.385 12.018-12.022C24.049 5.385 18.664 0 12.031 0zm0 21.99c-1.854 0-3.669-.499-5.251-1.442l-.377-.224-3.9 1.022 1.042-3.803-.245-.391a9.92 9.92 0 0 1-1.524-5.133c0-5.503 4.478-9.98 9.985-9.98 5.507 0 9.985 4.477 9.985 9.98 0 5.504-4.478 9.981-9.985 9.981zm5.474-7.487c-.3-.15-1.774-.875-2.05-.975-.275-.1-.476-.15-.676.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.489-.893-.796-1.496-1.78-1.671-2.08-.175-.3-.019-.462.131-.611.136-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525s-.676-1.63-.926-2.23c-.244-.585-.492-.506-.676-.515l-.576-.01c-.2 0-.525.075-.8.375s-1.05 1.025-1.05 2.5 1.075 2.898 1.225 3.098c.15.2 2.116 3.23 5.124 4.53.716.31 1.275.495 1.71.634.719.229 1.373.197 1.89.12.578-.086 1.774-.726 2.025-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z" />
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">WhatsApp</span>
+                <span class="contact-value">+591 71832939</span>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- Correo con botón copiar -->
+            <div class="contact-card-item contact-card-item--copy" id="copy-email-btn" role="button" tabindex="0"
+              title="Click para copiar correo">
+              <div class="contact-icon contact-icon--mail">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">Correo Electrónico (Click para copiar)</span>
+                <span class="contact-value" id="email-text">samuelantoni2002@gmail.com</span>
+              </div>
+              <span class="copy-badge" id="copy-badge">Copiar</span>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="http://www.linkedin.com/in/samuel-veliz" target="_blank" rel="noopener noreferrer"
+              class="contact-card-item">
+              <div class="contact-icon contact-icon--in">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">LinkedIn</span>
+                <span class="contact-value">samuel-veliz</span>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/savelizbdev" target="_blank" rel="noopener noreferrer"
+              class="contact-card-item">
+              <div class="contact-icon contact-icon--gh">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">GitHub</span>
+                <span class="contact-value">savelizbdev</span>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="brand-bracket">&lt;</span>
+          <span class="brand-name">SamuelVeliz</span>
+          <span class="brand-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">
+          Diseñado y construido con HTML, Vanilla CSS & JS moderno. Optimizado para GitHub Pages.
+        </p>
+      </div>
+      <div class="footer-right">
+        <span class="footer-location">📍 La Paz, Bolivia • 2026</span>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Volver arriba">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+          <span>Subir</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy Email -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>¡Correo copiado al portapapeles!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
