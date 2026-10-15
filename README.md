@@ -63,19 +63,18 @@ Especialista en desarrollo web Full Stack (**React, TypeScript, FastAPI, Python*
 
 ---
 
-## 🚀 Despliegue en GitHub Pages
+## 🚀 Despliegue Automatizado con GitHub Actions
 
-Este proyecto está listo para publicarse en **GitHub Pages** en menos de 1 minuto:
+El proyecto cuenta con un workflow automatizado en [deploy.yml](file:///.github/workflows/deploy.yml) que despliega la landing page a **GitHub Pages** en cada actualización de la rama `main`.
 
-1. Sube este repositorio a tu cuenta de GitHub (`git push origin main`).
-2. Ve a la pestaña **Settings** (Configuración) de tu repositorio.
-3. En el menú lateral izquierdo, haz clic en **Pages**.
-4. En la sección **Build and deployment > Branch**:
-   - Selecciona la rama `main` (o `master`).
-   - Deja la carpeta en `/ (root)`.
-   - Haz clic en **Save** (Guardar).
-5. Espera unos segundos y GitHub te proporcionará tu URL pública:  
-   `https://<tu-usuario>.github.io/<nombre-del-repo>/`
+### Activación en tu repositorio (única vez):
+1. Entra a tu repositorio: [github.com/savelizbdev/cv-savb](https://github.com/savelizbdev/cv-savb)
+2. Ve a la pestaña **Settings** (Configuración) > **Pages** (en el menú lateral izquierdo).
+3. En la sección **Build and deployment > Source**, cambia de *Deploy from a branch* a **GitHub Actions**.
+4. ¡Listo! El workflow se encargará de compilar y desplegar automáticamente.
+
+Tu portafolio estará disponible en:  
+🌐 **[https://savelizbdev.github.io/cv-savb/](https://savelizbdev.github.io/cv-savb/)**
 
 ---
 
